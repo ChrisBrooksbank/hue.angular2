@@ -11,10 +11,6 @@ export class HueLightBulbComponent {
     private _bulbName: string = "";
     private _bulbPowerState: bulbPowerStates = bulbPowerStates.unknown;
 
-    constructor(bulbName: string){
-        this._bulbName = bulbName;
-    }
-
     get bulbNumber():number {
         return this._bulbNumber;
     }

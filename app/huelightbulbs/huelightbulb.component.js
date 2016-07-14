@@ -24,14 +24,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 bulbPowerStates[bulbPowerStates["on"] = 2] = "on";
             })(bulbPowerStates || (bulbPowerStates = {}));
             HueLightBulbComponent = (function () {
-                function HueLightBulbComponent(bulbName) {
+                function HueLightBulbComponent() {
                     this._bulbNumber = -1;
                     this._bulbName = "";
                     this._bulbPowerState = bulbPowerStates.unknown;
                     this.toggleOnOff = function () { return; };
                     this.turnOn = function () { return; };
                     this.turnOff = function () { return; };
-                    this._bulbName = bulbName;
                 }
                 Object.defineProperty(HueLightBulbComponent.prototype, "bulbNumber", {
                     get: function () {
@@ -68,7 +67,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                         selector: 'hue-lightbulb',
                         templateUrl: 'app/huelightbulbs/huelightbulb.component.html'
                     }), 
-                    __metadata('design:paramtypes', [String])
+                    __metadata('design:paramtypes', [])
                 ], HueLightBulbComponent);
                 return HueLightBulbComponent;
             }());
