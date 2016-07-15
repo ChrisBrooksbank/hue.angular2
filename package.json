@@ -1,8 +1,8 @@
 {
-    "name": "product-management",
-    "version": "1.0.0",
-    "author": "Deborah Kurata",
-    "description": "Package for the Acme Product Management sample application",
+    "name": "hue-lights-management",
+    "version": "0.0.1",
+    "author": "Chris Brooksbank",
+    "description": "Package for the control of Phillips Hue Lights",
     "scripts": {
         "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
         "tsc": "tsc",

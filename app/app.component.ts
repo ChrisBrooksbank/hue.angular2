@@ -5,7 +5,7 @@ import { HueLightBulbComponent } from './huelightbulbs/huelightbulb.component';
   selector: 'hue-app',
   template: `
   <div><h1>{{pageTitle}}</h1>
-   <hue-lightbulb>Loading lightbulb</hue-lightbulb>
+   <hue-lightbulb bulbName="landing">Loading lightbulb</hue-lightbulb>
   </div>
   `,
   directives: [HueLightBulbComponent]

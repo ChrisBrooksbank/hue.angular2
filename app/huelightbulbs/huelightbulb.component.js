@@ -25,47 +25,17 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             })(bulbPowerStates || (bulbPowerStates = {}));
             HueLightBulbComponent = (function () {
                 function HueLightBulbComponent() {
-                    this._bulbNumber = -1;
-                    this._bulbName = "";
-                    this._bulbPowerState = bulbPowerStates.unknown;
+                    this.bulbNumber = -1;
+                    this.bulbName = '';
+                    this.bulbPowerState = bulbPowerStates.unknown;
                     this.toggleOnOff = function () { return; };
                     this.turnOn = function () { return; };
                     this.turnOff = function () { return; };
                 }
-                Object.defineProperty(HueLightBulbComponent.prototype, "bulbNumber", {
-                    get: function () {
-                        return this._bulbNumber;
-                    },
-                    set: function (thebulbNumber) {
-                        this._bulbNumber = thebulbNumber;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
-                Object.defineProperty(HueLightBulbComponent.prototype, "bulbName", {
-                    get: function () {
-                        return this._bulbName;
-                    },
-                    set: function (theBulbName) {
-                        this._bulbName = theBulbName;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
-                Object.defineProperty(HueLightBulbComponent.prototype, "bulbPowerState", {
-                    get: function () {
-                        return this._bulbPowerState;
-                    },
-                    set: function (theBulbPowerState) {
-                        this._bulbPowerState = theBulbPowerState;
-                    },
-                    enumerable: true,
-                    configurable: true
-                });
                 HueLightBulbComponent = __decorate([
                     core_1.Component({
                         selector: 'hue-lightbulb',
-                        templateUrl: 'app/huelightbulbs/huelightbulb.component.html'
+                        templateUrl: 'app/huelightbulbs/huelightbulb.component.html',
                     }), 
                     __metadata('design:paramtypes', [])
                 ], HueLightBulbComponent);

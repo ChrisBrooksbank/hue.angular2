@@ -28,7 +28,7 @@ System.register(['angular2/core', './huelightbulbs/huelightbulb.component'], fun
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'hue-app',
-                        template: "\n  <div><h1>{{pageTitle}}</h1>\n   <hue-lightbulb>Loading lightbulb</hue-lightbulb>\n  </div>\n  ",
+                        template: "\n  <div><h1>{{pageTitle}}</h1>\n   <hue-lightbulb bulbName=\"landing\">Loading lightbulb</hue-lightbulb>\n  </div>\n  ",
                         directives: [huelightbulb_component_1.HueLightBulbComponent]
                     }), 
                     __metadata('design:paramtypes', [])
