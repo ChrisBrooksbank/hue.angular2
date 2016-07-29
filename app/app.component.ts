@@ -1,14 +1,14 @@
 import { Component } from 'angular2/core';
-import { HueLightBulbComponent } from './huelightbulbs/huelightbulb.component';
+import { HueLightBulbListComponent } from './huelightbulbs/huelightbulb-list.component';
 
 @Component({
   selector: 'hue-app',
   template: `
   <div><h1>{{pageTitle}}</h1>
-   <hue-lightbulb bulbName="landing">Loading lightbulb</hue-lightbulb>
+   <hue-lightbulb-list>Loading lightbulb list</hue-lightbulb-list>
   </div>
   `,
-  directives: [HueLightBulbComponent]
+  directives: [HueLightBulbListComponent]
 })
 export class AppComponent{
     pageTitle: string = 'Phillips Hue Light - Angular 2';
